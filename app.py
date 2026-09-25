@@ -13,15 +13,20 @@ app.secret_key = os.environ.get("NOVA_SECRET_KEY")
 app.config["SESSION_COOKIE_SAMESITE"] = "None"
 app.config["SESSION_COOKIE_SECURE"] = True
 
+from flask_cors import CORS
+
 CORS(
     app,
-    supports_credentials=True,
-    origins=[
-        "http://127.0.0.1:5500",
-        "http://localhost:5500",
-        "https://approaches-olive-earthquake-renew.trycloudflare.com"
-        "https://nova-social-60a.pages.dev"
-    ]
+    resources={
+        r"/api/*": {
+            "origins": [
+                "http://127.0.0.1:5500",
+                "http://localhost:5500",
+                "https://nova-social-60a.pages.dev"
+            ]
+        }
+    },
+    supports_credentials=True
 )
 
 
