@@ -5,9 +5,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from database import get_connection, init_database, init_posts_table
 
 
-app = Flask(__name__)
+import os
 
-app.secret_key = "NOVA_DEVELOPMENT_SECRET_KEY_2026"
+app = Flask(__name__)
+app.secret_key = os.environ.get("NOVA_SECRET_KEY")
 
 CORS(
     app,
