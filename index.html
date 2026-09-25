@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="NOVA یک شبکه اجتماعی مدرن برای ارتباط، اشتراک‌گذاری و کشف دنیای جدید است.">
+
+    <title>NOVA — Connect Beyond</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <div class="grid"></div>
+
+        <div class="stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <div class="logo-mark">
+                <span>N</span>
+            </div>
+
+            <div class="logo-text">
+                <strong>NOVA</strong>
+                <small>CONNECT BEYOND</small>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about">درباره NOVA</a>
+            <a href="#features">قابلیت‌ها</a>
+            <a href="#discover">کشف کردن</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn" id="loginButton">
+                ورود
+            </button>
+
+            <button class="nav-signup" id="signupButton">
+                ثبت‌نام
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="pulse"></span>
+                    نسل جدید ارتباط اجتماعی
+                </div>
+
+                <h1>
+                    دنیای خودت را
+                    <span>بساز.</span>
+                </h1>
+
+                <p class="hero-description">
+                    NOVA جایی برای ارتباط، کشف ایده‌های تازه و به اشتراک گذاشتن
+                    لحظه‌هایی است که برایت اهمیت دارند.
+                    بدون شلوغی، بدون محدودیت‌های اضافه.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" id="startButton">
+                        <span>ثبت‌نام و شروع</span>
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 12h13M13 6l6 6-6 6"/>
+                        </svg>
+                    </button>
+
+                    <button class="secondary-btn" id="exploreButton">
+                        <span class="play-icon">▶</span>
+                        آشنایی بیشتر
+                    </button>
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <div class="meta-item">
+                        <strong>∞</strong>
+                        <span>ارتباط آزاد</span>
+                    </div>
+
+                    <div class="meta-divider"></div>
+
+                    <div class="meta-item">
+                        <strong>24/7</strong>
+                        <span>همیشه آنلاین</span>
+                    </div>
+
+                    <div class="meta-divider"></div>
+
+                    <div class="meta-item">
+                        <strong>∞</strong>
+                        <span>داستان برای ساختن</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Floating Social Preview -->
+            <div class="hero-visual">
+
+                <div class="visual-glow"></div>
+
+                <div class="social-card main-card">
+
+                    <div class="card-top">
+
+                        <div class="user-info">
+
+                            <div class="avatar avatar-purple">
+                                A
+                            </div>
+
+                            <div>
+                                <strong>Alex</strong>
+                                <span>همین الان</span>
+                            </div>
+
+                        </div>
+
+                        <button class="more-btn">•••</button>
+
+                    </div>
+
+
+                    <div class="post-image">
+                        <div class="image-overlay"></div>
+
+                        <div class="mountain">
+                            <div class="moon"></div>
+                            <div class="mountain-back"></div>
+                            <div class="mountain-front"></div>
+                        </div>
+
+                        <span class="image-label">
+                            DREAMSCAPE
+                        </span>
+                    </div>
+
+
+                    <div class="post-actions">
+
+                        <div class="action-group">
+
+                            <button class="icon-button heart">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20.8 8.6c0 5.4-8.8 10.1-8.8 10.1S3.2 14 3.2 8.6C3.2 6 5.1 4 7.7 4c1.7 0 3.2.9 4.3 2.2C13.1 4.9 14.6 4 16.3 4c2.6 0 4.5 2 4.5 4.6Z"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5c-1.3 0-2.5-.3-3.6-.8L3 21l1.8-4.8A8.2 8.2 0 0 1 3 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 12v8h16v-8M12 4v12M7 9l5-5 5 5"/>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                        <span class="likes">
+                            2.4K
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Notification -->
+                <div class="floating-card notification-card">
+
+                    <div class="notification-icon">
+                        ♡
+                    </div>
+
+                    <div>
+                        <strong>یک ارتباط جدید</strong>
+                        <span>Someone liked your post</span>
+                    </div>
+
+                    <div class="notification-dot"></div>
+
+                </div>
+
+
+                <!-- Floating Message -->
+                <div class="floating-card message-card">
+
+                    <div class="mini-avatar">
+                        M
+                    </div>
+
+                    <div>
+                        <strong>Maya</strong>
+                        <span>پیامت رو دیدم ✨</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    NOVA / 01
+                </span>
+
+                <h2>
+                    فقط یک شبکه اجتماعی نیست.
+                </h2>
+
+                <p>
+                    فضایی ساخته‌ایم که ارتباط با آدم‌ها، کشف محتوا و ساختن
+                    هویت دیجیتال، ساده و لذت‌بخش باشد.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid" id="features">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        هویت خودت
+                    </h3>
+
+                    <p>
+                        پروفایل خودت را بساز، علایقت را نشان بده و داستان
+                        خودت را به سبک خودت روایت کن.
+                    </p>
+
+                    <span class="feature-number">01</span>
+
+                </article>
+
+
+                <article class="feature-card featured">
+
+                    <div class="feature-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        ارتباط واقعی
+                    </h3>
+
+                    <p>
+                        آدم‌های جدید پیدا کن، دنبالشان کن و بخشی از دنیای
+                        دیجیتال آن‌ها باش.
+                    </p>
+
+                    <span class="feature-number">02</span>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        کشف بی‌پایان
+                    </h3>
+
+                    <p>
+                        محتوای جدید کشف کن و چیزهایی را پیدا کن که واقعاً
+                        ارزش دیدن دارند.
+                    </p>
+
+                    <span class="feature-number">03</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-section" id="discover">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    YOUR NEXT CHAPTER
+                </span>
+
+                <h2>
+                    داستانت از اینجا شروع می‌شود.
+                </h2>
+
+                <p>
+                    وارد NOVA شو و اولین قدم را بردار.
+                </p>
+
+                <button class="primary-btn cta-button" id="ctaSignup">
+                    ساخت حساب رایگان
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h13M13 6l6 6-6 6"/>
+                    </svg>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <div class="logo-mark small">
+                N
+            </div>
+
+            <strong>NOVA</strong>
+        </div>
+
+        <span>
+            © 2026 NOVA. ساخته شده برای ارتباط.
+        </span>
+
+        <div class="footer-links">
+            <a href="#">حریم خصوصی</a>
+            <a href="#">قوانین</a>
+        </div>
+
+    </footer>
+
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="modal-box">
+
+            <button class="modal-close" id="closeModal">
+                ×
+            </button>
+
+            <div class="modal-logo">
+                N
+            </div>
+
+            <span class="modal-label">
+                WELCOME TO NOVA
+            </span>
+
+            <h2>
+                آماده‌ای شروع کنی؟
+            </h2>
+
+            <p>
+                حساب خودت را بساز و وارد دنیای NOVA شو.
+            </p>
+
+            
+<form id="signupForm">
+
+    <div class="input-group">
+
+        <label for="username">
+            نام کاربری
+        </label>
+
+        <input
+            id="username"
+            type="text"
+            placeholder="@username"
+            autocomplete="username"
+            minlength="3"
+            maxlength="30"
+            required
+        >
+
+    </div>
+
+
+    <div class="input-group">
+
+        <label for="email">
+            ایمیل
+        </label>
+
+        <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+        >
+
+    </div>
+
+
+    <div class="input-group">
+
+        <label for="password">
+            رمز عبور
+        </label>
+
+        <input
+            id="password"
+            type="password"
+            placeholder="حداقل ۸ کاراکتر"
+            autocomplete="new-password"
+            minlength="8"
+            required
+        >
+
+    </div>
+
+
+    <div class="input-group">
+
+        <label for="confirmPassword">
+            تکرار رمز عبور
+        </label>
+
+        <input
+            id="confirmPassword"
+            type="password"
+            placeholder="رمز عبور را دوباره وارد کنید"
+            autocomplete="new-password"
+            minlength="8"
+            required
+        >
+
+    </div>
+
+
+    <button class="primary-btn form-submit" type="submit">
+        ساخت حساب
+    </button>
+
+</form>
+            
+            
+
+            <small class="modal-note">
+                با ساخت حساب، قوانین استفاده از NOVA را می‌پذیرید.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- Login Modal -->
+<div class="modal" id="loginModal">
+
+    <div class="modal-backdrop login-backdrop"></div>
+
+    <div class="modal-box">
+
+        <button class="modal-close" id="closeLoginModal">
+            ×
+        </button>
+
+        <div class="modal-logo">
+            N
+        </div>
+
+        <span class="modal-label">
+            WELCOME BACK
+        </span>
+
+        <h2>
+            دوباره خوش آمدی.
+        </h2>
+
+        <p>
+            وارد حساب NOVA خودت شو.
+        </p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label for="loginUsername">
+                    نام کاربری
+                </label>
+
+                <input
+                    id="loginUsername"
+                    type="text"
+                    placeholder="@username"
+                    autocomplete="username"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="loginPassword">
+                    رمز عبور
+                </label>
+
+                <input
+                    id="loginPassword"
+                    type="password"
+                    placeholder="رمز عبور"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                class="primary-btn form-submit"
+                type="submit"
+            >
+                ورود به NOVA
+            </button>
+
+        </form>
+
+        <small class="modal-note">
+            هنوز حساب نداری؟ می‌تونی همین حالا ثبت‌نام کنی.
+        </small>
+
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

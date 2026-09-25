@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NOVA — فضای اجتماعی شخصی تو"
+    >
+
+    <title>NOVA — Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+
+<body>
+
+    <!-- Background -->
+
+    <div class="app-background">
+
+        <div class="app-orb orb-one"></div>
+
+        <div class="app-orb orb-two"></div>
+
+    </div>
+
+
+    <!-- App -->
+
+    <div class="app-layout">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-logo">
+
+                <div class="sidebar-logo-mark">
+                    N
+                </div>
+
+                <div>
+
+                    <strong>NOVA</strong>
+
+                    <span>
+                        CONNECT BEYOND
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <nav class="main-nav">
+
+                <button
+                    class="nav-item active"
+                    data-page="home"
+                >
+
+                    <span class="nav-icon">⌂</span>
+
+                    <span>
+                        خانه
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="explore"
+                >
+
+                    <span class="nav-icon">⌕</span>
+
+                    <span>
+                        کشف
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="notifications"
+                >
+
+                    <span class="nav-icon">♡</span>
+
+                    <span>
+                        اعلان‌ها
+                    </span>
+
+                    <span class="notification-count">
+                        0
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="messages"
+                >
+
+                    <span class="nav-icon">◌</span>
+
+                    <span>
+                        پیام‌ها
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-page="profile"
+                >
+
+                    <span class="nav-icon">◎</span>
+
+                    <span>
+                        پروفایل
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+
+                <button
+                    class="nav-item"
+                    id="settingsButton"
+                >
+
+                    <span class="nav-icon">⚙</span>
+
+                    <span>
+                        تنظیمات
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="logout-button"
+                    id="logoutButton"
+                >
+
+                    <span>
+                        خروج از حساب
+                    </span>
+
+                    <span>
+                        ↪
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- Main -->
+
+        <main class="app-main">
+
+
+            <!-- Topbar -->
+
+            <header class="app-topbar">
+
+                <div>
+
+                    <span class="topbar-label">
+                        NOVA / HOME
+                    </span>
+
+                    <h1>
+                        خانه
+                    </h1>
+
+                </div>
+
+
+                <div class="topbar-user">
+
+                    <div class="topbar-avatar">
+                        N
+                    </div>
+
+                    <div>
+
+                        <strong id="topUsername">
+                            در حال بارگذاری...
+                        </strong>
+
+                        <span>
+                            آنلاین
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+<!-- Home -->
+
+<section
+    class="app-page active"
+    id="homePage"
+>
+
+    <div class="home-page">
+
+    <!-- Welcome -->
+    <div class="home-welcome">
+
+        <div>
+            <span class="home-label">
+                NOVA / HOME
+            </span>
+
+            <h1>
+                Welcome back.
+            </h1>
+
+            <p>
+                دنیای خودت رو بساز و چیزهایی که برات مهمه رو به اشتراک بذار.
+            </p>
+        </div>
+
+        <!-- NOVA 3D PET -->
+
+        <div class="nova-pet-box">
+
+            <div
+                id="novaPetCanvas"
+                class="nova-pet-canvas"
+            ></div>
+
+            <div
+                class="nova-pet-message"
+                id="novaPetMessage"
+            >
+                GOOD TO SEE YOU AGAIN.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Create Post -->
+
+    <div class="create-post-card">
+
+        <div class="create-post-top">
+
+            <div
+                class="create-post-avatar"
+                id="createPostAvatar"
+            >
+                N
+            </div>
+
+            <div>
+
+                <strong>
+                    چیزی برای اشتراک‌گذاری داری؟
+                </strong>
+
+                <span>
+                    Share something with NOVA.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <textarea
+            id="postContent"
+            maxlength="2000"
+            placeholder="What’s on your mind?"
+        ></textarea>
+
+
+        <div class="create-post-bottom">
+
+            <span id="postCounter">
+                0 / 2000
+            </span>
+
+            <button
+                class="primary-app-button"
+                id="publishPostButton"
+            >
+                انتشار پست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Feed -->
+
+    <div class="feed-section">
+
+        <div class="feed-heading">
+
+            <div>
+
+                <span>
+                    YOUR SPACE
+                </span>
+
+                <h2>
+                    آخرین پست‌ها
+                </h2>
+
+            </div>
+
+            <button
+                class="feed-refresh"
+                id="refreshFeedButton"
+            >
+                ↻
+            </button>
+
+        </div>
+
+
+        <div
+            class="feed-list"
+            id="feedList"
+        >
+
+            <div class="feed-loading">
+                در حال بارگذاری پست‌ها...
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+            </section>
+
+
+
+            <!-- Explore -->
+
+            <section
+                class="app-page"
+                id="explorePage"
+            >
+
+                <div class="placeholder-page">
+
+                    <span>
+                        NOVA / EXPLORE
+                    </span>
+
+                    <h2>
+                        کشف کردن
+                    </h2>
+
+                    <p>
+                        سیستم Explore در مرحله بعد ساخته می‌شود.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Notifications -->
+
+            <section
+                class="app-page"
+                id="notificationsPage"
+            >
+
+                <div class="placeholder-page">
+
+                    <span>
+                        NOVA / NOTIFICATIONS
+                    </span>
+
+                    <h2>
+                        اعلان‌ها
+                    </h2>
+
+                    <p>
+                        سیستم اعلان‌ها در مرحله بعد ساخته می‌شود.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Messages -->
+
+            <section
+                class="app-page"
+                id="messagesPage"
+            >
+
+                <div class="placeholder-page">
+
+                    <span>
+                        NOVA / MESSAGES
+                    </span>
+
+                    <h2>
+                        پیام‌ها
+                    </h2>
+
+                    <p>
+                        سیستم پیام‌رسانی در مرحله بعد ساخته می‌شود.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Profile -->
+
+<section
+    class="app-page"
+    id="profilePage"
+>
+
+    <div class="profile-page">
+
+        <div class="profile-header">
+
+            <div class="profile-avatar" id="profileAvatar">
+                N
+            </div>
+
+            <div class="profile-main-info">
+
+                <span class="profile-label">
+                    NOVA / PROFILE
+                </span>
+
+                <h2 id="profileDisplayName">
+                    در حال بارگذاری...
+                </h2>
+
+                <span
+                    class="profile-username"
+                    id="profileUsername"
+                >
+                    @username
+                </span>
+
+                <p id="profileBio">
+                    هنوز Bio نوشته نشده.
+                </p>
+
+
+<!-- BATTLE CARD -->
+
+<div class="battle-card-section">
+
+    <div class="battle-card-heading">
+
+        <span class="battle-card-kicker">
+            NOVA / IDENTITY
+        </span>
+
+        <h3>BATTLE CARD</h3>
+
+        <p>
+            کارت خودت را انتخاب کن
+        </p>
+
+    </div>
+
+
+    <div
+        class="active-battle-card"
+        id="activeBattleCard"
+    >
+
+        <div class="battle-card-content">
+
+            <span class="battle-card-mini">
+                NOVA
+            </span>
+
+            <strong id="activeBattleCardTitle">
+                COSMIC NOVA
+            </strong>
+
+            <span id="activeBattleCardDescription">
+                Born beyond the stars.
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="battle-card-selector">
+
+        <div
+            class="battle-card-option cosmic-card"
+            data-card="cosmic"
+            
+        >
+
+            <span class="card-shine"></span>
+
+            <span class="card-symbol">✦</span>
+
+            <strong>COSMIC NOVA</strong>
+
+            <small>FREE</small>
+
+        </div>
+
+
+        <div
+            class="battle-card-option void-card"
+            data-card="void"
+            
+        >
+
+            <span class="card-shine"></span>
+
+            <span class="card-symbol">◈</span>
+
+            <strong>VOID KING</strong>
+
+            <small>FREE</small>
+
+        </div>
+
+
+        <div
+            class="battle-card-option aurora-card"
+            data-card="aurora"
+            
+        >
+
+            <span class="card-shine"></span>
+
+            <span class="card-symbol">✧</span>
+
+            <strong>AURORA</strong>
+
+            <small>FREE</small>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            </div>
+
+            <button
+                class="edit-profile-button"
+                id="editProfileButton"
+            >
+                ویرایش پروفایل
+            </button>
+
+        </div>
+
+
+        <div class="profile-stats">
+
+            <div class="profile-stat">
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    پست
+                </span>
+
+            </div>
+
+
+            <div class="profile-stat">
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    دنبال‌کننده
+                </span>
+
+            </div>
+
+
+            <div class="profile-stat">
+
+                <strong>
+                    0
+                </strong>
+
+                <span>
+                    دنبال‌شده
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-content">
+
+            <div class="profile-content-heading">
+
+                <span>
+                    YOUR POSTS
+                </span>
+
+                <h3>
+                    پست‌های تو
+                </h3>
+
+            </div>
+
+
+            <div class="profile-empty">
+
+                <div class="empty-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    هنوز پستی نداری
+                </h3>
+
+                <p>
+                    اولین پستت را بساز و داستانت را
+                    با دنیای NOVA به اشتراک بگذار.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Edit Profile Modal -->
+
+    <div
+        class="profile-edit-overlay"
+        id="profileEditOverlay"
+    >
+
+        <div class="profile-edit-box">
+
+            <button
+                class="profile-edit-close"
+                id="closeProfileEdit"
+            >
+                ×
+            </button>
+
+            <span class="profile-label">
+                EDIT PROFILE
+            </span>
+
+            <h2>
+                پروفایلت را شخصی کن.
+            </h2>
+
+            <p>
+                اطلاعاتی که دیگران در پروفایل تو می‌بینند.
+            </p>
+
+
+            <form id="profileEditForm">
+
+                <div class="profile-input-group">
+
+                    <label for="editDisplayName">
+                        نام نمایشی
+                    </label>
+
+                    <input
+                        id="editDisplayName"
+                        type="text"
+                        maxlength="50"
+                        placeholder="نامی که دوست داری نمایش داده شود"
+                    >
+
+                </div>
+
+
+                <div class="profile-input-group">
+
+                    <label for="editBio">
+                        Bio
+                    </label>
+
+                    <textarea
+                        id="editBio"
+                        maxlength="160"
+                        placeholder="کمی درباره خودت بنویس..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    class="primary-app-button profile-save-button"
+                    type="submit"
+                >
+                    ذخیره تغییرات
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Avatar Selector -->
+
+<div
+    class="avatar-selector-overlay"
+    id="avatarSelectorOverlay"
+>
+
+    <div class="avatar-selector-box">
+
+        <button
+            class="avatar-selector-close"
+            id="closeAvatarSelector"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="avatar-selector-heading">
+
+            <span>
+                NOVA / AVATARS
+            </span>
+
+            <h2>
+                CHOOSE YOUR AVATAR
+            </h2>
+
+            <p>
+                هویت خودت را انتخاب کن.
+            </p>
+
+        </div>
+
+
+        <div class="avatar-sheet-wrapper">
+
+            <img
+                class="avatar-sheet-image"
+                src="assets/avatars/NOVA_avatars_full_sheet.png"
+                alt="NOVA Avatar Collection"
+            >
+
+
+            <!-- Click areas -->
+
+            <button
+                class="avatar-hit"
+                data-avatar="1"
+                type="button"
+                aria-label="Avatar 1"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="2"
+                type="button"
+                aria-label="Avatar 2"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="3"
+                type="button"
+                aria-label="Avatar 3"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="4"
+                type="button"
+                aria-label="Avatar 4"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="5"
+                type="button"
+                aria-label="Avatar 5"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="6"
+                type="button"
+                aria-label="Avatar 6"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="7"
+                type="button"
+                aria-label="Avatar 7"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="8"
+                type="button"
+                aria-label="Avatar 8"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="9"
+                type="button"
+                aria-label="Avatar 9"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="10"
+                type="button"
+                aria-label="Avatar 10"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="11"
+                type="button"
+                aria-label="Avatar 11"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="12"
+                type="button"
+                aria-label="Avatar 12"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="13"
+                type="button"
+                aria-label="Avatar 13"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="14"
+                type="button"
+                aria-label="Avatar 14"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="15"
+                type="button"
+                aria-label="Avatar 15"
+            ></button>
+
+            <button
+                class="avatar-hit"
+                data-avatar="16"
+                type="button"
+                aria-label="Avatar 16"
+            ></button>
+
+        </div>
+
+
+        <div class="avatar-selector-footer">
+
+            <span class="avatar-selected-label">
+                انتخاب فعلی:
+                <strong id="selectedAvatarNumber">
+                    1
+                </strong>
+            </span>
+
+            <button
+                class="avatar-confirm-button"
+                id="confirmAvatarButton"
+                type="button"
+            >
+                انتخاب آواتار
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        </main>
+
+    </div>
+
+     
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
