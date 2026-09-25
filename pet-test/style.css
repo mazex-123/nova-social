@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #25204a 0%,
+            #100e20 42%,
+            #080811 100%
+        );
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    color: white;
+}
+
+#petStage {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+#petCanvas {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#petCanvas canvas {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.pet-title {
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    opacity: 0.9;
+}
+
+.pet-subtitle {
+    position: absolute;
+
+    top: 57px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.35;
+}
+
+.pet-status {
+    position: absolute;
+
+    left: 50%;
+    bottom: 35px;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.65;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #b77cff;
+
+    box-shadow:
+        0 0 8px #b77cff,
+        0 0 18px rgba(183, 124, 255, 0.7);
+}
